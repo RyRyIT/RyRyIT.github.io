@@ -20,17 +20,12 @@ h1{
 hr{
   border-top: 1px solid teal;
 }
-footer{
-  background-color: #474c54;
-  text-align: center;
-  border-top: solid teal;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-
-
- 
-
+  footer{
+    background-color: #474c54;
+    text-align: center;
+    border-top: solid teal;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
