@@ -45,25 +45,30 @@
 
 .container_content_inner {
   width: 80%;
-  margin-left: 80px;
+  margin-left: 80px; 
+  padding-right: 50px;
 }
 
 .container_outer_img {
   margin-bottom: 50px;
   width: 50%;
   overflow: hidden; 
-  height: auto;
+  padding-left: 45px; 
+  padding-top: 10px;
 }   
     
 .container_img {
   width: 100%;
   animation: slideIn 1.5s ease-in-out forwards; 
-  position: relative; 
+  position: relative;  
+  max-height: 100%;
 }
 
 .par {
   height: auto;
-  overflow: hidden;
+  overflow: hidden; 
+  padding-right: 50px; 
+  font-size: 22px; 
 }
 
 p{
