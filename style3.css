@@ -1,4 +1,4 @@
-background{ 
+.background{ 
   background-color: #bf3030;
 }
 .navbar-light .navbar-brand{
@@ -18,7 +18,7 @@ background{
   left: 0;
   right: 0;
   bottom: 0;
-  height: 175%;
+  height: 145%;
   z-index: -10;
   background-color: var(--contrast-color);
 } 
@@ -31,19 +31,21 @@ background{
   color: #fff;
   animation: expand .9s ease forwards;
   background-color: var(--secondary-color);
-  position: absolute;
+  position: relative;
   font-family: "Poppins", sans-serif;
   transition: all .9s ease;
   margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
   width: fit-content; 
-  height: fit-content;
-  overflow: scroll; 
+  
+  
+  /*overflow: scroll; */
 } 
 main
 {
 height: 750px;
+overflow-x: hidden;
 overflow: scroll;
 }
 h1{
@@ -57,8 +59,9 @@ div.row{
   
   margin-left: 20px;
   margin-right: 10px;
-  width: fit-content;
-  overflow: scroll;
+  width: fit-content; 
+  overflow-x: hidden;
+  overflow: auto scroll;
 }
 img{
   margin-right: 20px;
@@ -68,27 +71,27 @@ footer{
   background-color: #474c54;
   text-align: center;
   border-top: solid teal;
-  padding: 10px;
-  position:fixed;
+  padding-bottom: 10px;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
-@media only screen and (min-width: 250px) and (max-width: 768px) {
+/*@media screen and (min-width: 250px) and (max-width: 768px) {
 
   .container{
       width: 2500px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 768px) {
+/* @media screen and (min-width: 768px) and (max-width: 768px) {
   .container{
       width: 400px;
   }
-}
+} 
 @media screen and (min-width: 992px) and (max-width: 992px) {
   .container{
       width: 770px;
   }
-} 
+} */
 @keyframes slideIn {
   0% {
     transform: translateX(500px) scale(.2);

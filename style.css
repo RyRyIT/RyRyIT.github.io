@@ -2,22 +2,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
-.navbar-light .navbar-brand{
-  background-color: teal;
+}  
+
+body,
+input,
+textarea {
+    font-family: "Poppins", sans-serif 
+}
+/*#navbar{
+  background-color: #474c54;
   color: white;
   font-weight: bold; 
   border-bottom: teal; 
   border-top: teal; 
-  position: fixed;
-}
+  position: fixed; 
+
+}*/
 
 :root {
   --secondary-color: #09003a;
   --contrast-color: #bf3030;
 }
 .overlay {
-  position: absolute;
+  position: absolute; 
+  height: 1000px;
   top: 0;
   left: 0;
   right: 0;
@@ -26,48 +34,62 @@
   background-color: var(--contrast-color);
 }
 
-.container {
+.container-fluid {
   display: flex;
   justify-content: space-around; 
-  min-height: 100%;
   align-items: center;
   color: #fff;
   animation: expand .9s ease forwards;
   background-color: var(--secondary-color);
   position: relative;
   font-family: "Poppins", sans-serif;
-  transition: all .9s ease;
+  transition: all .9s ease; 
+  ;
 }
 
 .container_content {
- width: 50%;
-}
+ width: 50%; 
 
+
+}
+.navbar { 
+  background-color: #474c54;
+}
 .container_content_inner {
-  width: 80%;
-  margin-left: 80px;
+  width: 80%; 
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 4px 6px rgba(106, 106, 106, 0.45);
+  border-radius: 40px;
+  margin-left: 80px; 
+  border-color: white; 
+  
 }
 
-.container_outer_img {
-  margin-bottom: 50px;
-  width: 50%;
-  overflow: hidden; 
-  height: auto;
+.container_outer_img-fluid {
+  margin-bottom: 200px;
+  width: 3000px; 
+  overflow: hidden;  
+  padding-top: 200px;
+  padding-left: 200px;
+  height: 700px;
 }   
     
-.container_img {
-  width: 100%;
+.img-fluid {
+  width: 980px; 
+
+  height: 6px;
   animation: slideIn 1.5s ease-in-out forwards; 
   position: relative; 
 }
 
 .par {
   height: auto;
-  overflow: hidden;
+  overflow: hidden; 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-p{
-  line-height: 28px;
+p{ 
+  font-size: 1.5em;
+  line-height: 26px 6px +20px + 6px;
   transform: translateY(300px);
   animation: slideUp .8s ease-in-out forwards .8s;
 }
@@ -82,7 +104,9 @@ p{
 
 .title {
   overflow: hidden;
-  height: auto;
+  height: auto; 
+  text-align: center; 
+  font-family: "Helvetica Neue", Helvetica, Arial,;
 }
 
 h1 {
@@ -96,9 +120,10 @@ footer{
   background-color: #474c54;
   text-align: center;
   padding: 10px;
-  position: fixed;
+  position: relative;
+  padding-bottom: 23px;
   bottom: 0;
-  width: 100%;
+  width: 100%; 
 } 
 
 @keyframes slideIn {
